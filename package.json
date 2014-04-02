@@ -1,0 +1,21 @@
+{
+  "name": "TaskAdministrator",
+  "version": "0.0.0",
+  "description": "Es un administrador de tareas",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sera1308/TaskAdministrator"
+  },
+  "author": "Serafin Fernandez",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "c485d029e9b435d17ec86ec506d4b4c63e996a28",
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.0"
+  }
+}
