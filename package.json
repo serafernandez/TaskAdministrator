@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "description": "Es un administrador de tareas",
   "main": "index.html",
+  "window":  {
+    "position":"center",
+    "width":900,
+    "height":500
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

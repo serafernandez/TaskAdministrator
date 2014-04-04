@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TaskManager by s3r47h</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="crearTarea input-group">
+		<input type="text" class="form-control" placeholder="Nueva tarea">
+		<span class="input-group-btn">
+			<button class="btn btn-default" type='button'>Agregar</button>
+		</span>
+	</div>
+	<div class="listas">
+		<div class="lista listaPorHacer" id="ListaPorHacer">
+		</div>
+		<div class="lista listaHaciendo" id="listaHaciendo">
+			<div class="tarea">
+				<span class="titulo">Titulo<span class="badge">5</span></span>
+			</div>
+			
+		</div>
+		<div class="lista listaHecho" id="listaHecho">
+			
+		</div>
+	</div>
+
+
+
+	<!-- Comienzo con los templates -->
+	<script id="templateTarea" type="text/template">
+	</script>
+	<script src='js/jquery-2.1.0.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+	<script src='js/app.js'></script>
+</body>
+</html>

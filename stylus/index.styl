@@ -1,0 +1,27 @@
+@import "styles.css"
+
+amarillo=rgba(yellow, 0.5)
+rojo=rgba(red, 0.5)
+verde=rgba(green, 0.5)
+
+
+.crearTarea
+	width 50%
+.listas
+	margin-top 30px	
+	position relative
+	width 100%
+	.lista
+		border-radius 20px
+		display inline-block
+		height 80%
+		width 33%
+		&.listaPorHacer
+			background-color rojo
+		&.listaHaciendo
+			background-color amarillo
+		&.listaHecho
+			background-color verde
+		.tarea
+			background-color white
+			border-radius 20px
