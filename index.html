@@ -1,9 +1,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>TaskManager by s3r47h</title>
+	<title>TaskAdministrator by s3r47h</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/dot-luv/jquery-ui-1.10.4.custom.min.css">
 </head>
 <body>
 	<div class="crearTarea input-group">
@@ -14,15 +15,30 @@
 	</div>
 	<div class="listas">
 		<div class="lista listaPorHacer" id="ListaPorHacer">
+			<ul id="ulPorHacer" class='ulLista listasConectadas'>
+				
+			</ul>
 		</div>
 		<div class="lista listaHaciendo" id="listaHaciendo">
-			<div class="tarea">
-				<span class="titulo">Titulo<span class="badge">5</span></span>
-			</div>
-			
+			<ul id="ulHaciendo" class='ulLista listasConectadas'>
+				<li class="tarea">
+					<span class="titulo">Titulo<span class="badge">5</span></span>
+				</li>
+				<li class="tarea">
+					<span class="titulo">Titulo<span class="badge">5</span></span>
+				</li>
+				<li class="tarea">
+					<span class="titulo">Titulo<span class="badge">5</span></span>
+				</li>
+				<li class="tarea">
+					<span class="titulo">Titulo<span class="badge">5</span></span>
+				</li>
+			</ul>
 		</div>
 		<div class="lista listaHecho" id="listaHecho">
-			
+			<ul id="ulHecho" class='ulLista listasConectadas'>
+					
+			</ul>
 		</div>
 	</div>
 
@@ -30,8 +46,14 @@
 
 	<!-- Comienzo con los templates -->
 	<script id="templateTarea" type="text/template">
+
 	</script>
+
+
+
+
 	<script src='js/jquery-2.1.0.min.js'></script>
+	<script src='js/jquery-ui-1.10.4.custom.min.js'></script>
 	<script src='js/bootstrap.min.js'></script>
 	<script src='js/app.js'></script>
 </body>
