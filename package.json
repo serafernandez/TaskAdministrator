@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "description": "Es un administrador de tareas",
   "main": "index.html",
-  "window":  {
-    "position":"center",
-    "width":900,
-    "height":500
+  "window": {
+    "position": "center",
+    "width": 900,
+    "height": 500
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,8 +19,5 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "gitHead": "c485d029e9b435d17ec86ec506d4b4c63e996a28",
-  "dependencies": {
-    "backbone": "~1.1.2",
-    "underscore": "~1.6.0"
-  }
+  "dependencies": {}
 }

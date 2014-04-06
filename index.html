@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/dot-luv/jquery-ui-1.10.4.custom.min.css">
 </head>
 <body>
-	<div class="crearTarea input-group">
+	<div id="agregarTarea" class="crearTarea input-group">
 		<input type="text" class="form-control" placeholder="Nueva tarea">
 		<span class="input-group-btn">
 			<button class="btn btn-default" type='button'>Agregar</button>
@@ -21,18 +21,6 @@
 		</div>
 		<div class="lista listaHaciendo" id="listaHaciendo">
 			<ul id="ulHaciendo" class='ulLista listasConectadas'>
-				<li class="tarea">
-					<span class="titulo">Titulo<span class="badge">5</span></span>
-				</li>
-				<li class="tarea">
-					<span class="titulo">Titulo<span class="badge">5</span></span>
-				</li>
-				<li class="tarea">
-					<span class="titulo">Titulo<span class="badge">5</span></span>
-				</li>
-				<li class="tarea">
-					<span class="titulo">Titulo<span class="badge">5</span></span>
-				</li>
 			</ul>
 		</div>
 		<div class="lista listaHecho" id="listaHecho">
@@ -42,19 +30,28 @@
 		</div>
 	</div>
 
-
-
-	<!-- Comienzo con los templates -->
-	<script id="templateTarea" type="text/template">
-
-	</script>
-
-
-
-
 	<script src='js/jquery-2.1.0.min.js'></script>
+	<script src='js/underscore-min.js'></script>
+	<script src='js/backbone-min.js'></script>
 	<script src='js/jquery-ui-1.10.4.custom.min.js'></script>
 	<script src='js/bootstrap.min.js'></script>
 	<script src='js/app.js'></script>
 </body>
 </html>
+
+
+<!-- Comienzo con los templates -->
+	<!-- 
+	-->
+<script id="templateTarea" type="text/template">
+	<% _.each(tareas, function(eachOne){ %> 
+		<li class="tarea" id="<%= eachOne._id %>">
+			<span class="titulo">
+				<%= eachOne.titulo %>
+				<span class="badge">
+					<%= eachOne.nivel %>
+				</span>
+			</span>
+		</li>
+	<$ }); %>
+</script>
