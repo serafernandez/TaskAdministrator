@@ -8,12 +8,12 @@
 </head>
 <body>
 	<div id="agregarTarea" class="crearTarea input-group">
-		<input type="text" class="form-control" placeholder="Nueva tarea">
+		<input id="inputAgregar" type="text" class="form-control" placeholder="Nueva tarea">
 		<span class="input-group-btn">
 			<button class="btn btn-default" type='button'>Agregar</button>
 		</span>
 	</div>
-	<div class="listas">
+	<div id='listas' class="listas">
 		<div class="lista listaPorHacer" id="ListaPorHacer">
 			<ul id="ulPorHacer" class='ulLista listasConectadas'>
 				
@@ -24,7 +24,7 @@
 			</ul>
 		</div>
 		<div class="lista listaHecho" id="listaHecho">
-			<ul id="ulHecho" class='ulLista listasConectadas'>
+			<ul id="ulHechas" class='ulLista listasConectadas'>
 					
 			</ul>
 		</div>
@@ -44,14 +44,12 @@
 	<!-- 
 	-->
 <script id="templateTarea" type="text/template">
-	<% _.each(tareas, function(eachOne){ %> 
-		<li class="tarea" id="<%= eachOne._id %>">
-			<span class="titulo">
-				<%= eachOne.titulo %>
-				<span class="badge">
-					<%= eachOne.nivel %>
-				</span>
+	<li id='<%= _id %>' class='tarea'>
+		<span class='titulo'>
+			<%= titulo %>
+			<span class='badge'>
+				<%= nivel %>
 			</span>
-		</li>
-	<$ }); %>
+		</span>
+	</li>
 </script>

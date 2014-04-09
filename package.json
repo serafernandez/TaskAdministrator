@@ -19,5 +19,7 @@
   "license": "BSD",
   "readmeFilename": "README.md",
   "gitHead": "c485d029e9b435d17ec86ec506d4b4c63e996a28",
-  "dependencies": {}
+  "dependencies": {
+    "nedb": "~0.10.5"
+  }
 }
