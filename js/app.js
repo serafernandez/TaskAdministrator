@@ -30,7 +30,7 @@ window.ViewAgregarTarea = Backbone.View.extend({
 });
 window.ViewListas = Backbone.View.extend({
 	events:{
-		"sort li.tarea":"guardarTarea"
+		"sortstop #ulPorHacer, #ulHaciendo, #ulHechas":"guardarTarea"
 	},
 	initialize:function(config){
 		this.$el=config.$el
@@ -48,9 +48,10 @@ window.ViewListas = Backbone.View.extend({
 	render: function(){
 
 	},
-	guardarTarea: function(e){
-		debugger;
-		console.log(e)
+	guardarTarea: function(e, ui){
+		//console.log(e)
+		elemento=$('#'+e.toElement.id).parent()[0].id
+		console.log(elemento);
 	}
 });
 
@@ -82,7 +83,7 @@ $(document).ready(function(){
 	window.templates={};
 	window.templates.tempTareas = _.template($('#templateTarea').html());
 
-	$( "#ulPorHacer, #ulHaciendo, #ulHecho" ).sortable({
+	$( "#ulPorHacer, #ulHaciendo, #ulHechas" ).sortable({
     	connectWith: ".listasConectadas"
     }).disableSelection();
 
